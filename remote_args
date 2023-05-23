@@ -1,10 +1,3 @@
-spawn(function()
-for i = 1, 20000 do
-game:GetService("Players").LocalPlayer.PlayerGui.MainUI.LeftMain.Cash.Container.Container.CashAmount.Text = "0$"
-game:GetService("Players").LocalPlayer.PlayerGui.MainUI.LeftMain.XP.Container.XpAmount.Text = "Inf XP left to Rank" .." " ..tostring(game:GetService("Players").LocalPlayer.Level.Value)
-task.wait()
-end
-end)
 getgenv().remote_argsk = {
 "13",
 "12",
@@ -16,3 +9,8 @@ getgenv().remote_argsk = {
 "45",
 "44"
 }
+for i = 1, 20000 do
+game:GetService("Players").LocalPlayer.PlayerGui.MainUI.LeftMain.Cash.Container.Container.CashAmount.Text = "0$"
+game:GetService("Players").LocalPlayer.PlayerGui.MainUI.LeftMain.XP.Container.XpAmount.Text = "Inf XP left to Rank" .." " ..tostring(game:GetService("Players").LocalPlayer.Level.Value)
+task.wait()
+end
